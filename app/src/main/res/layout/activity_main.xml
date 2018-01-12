@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="pingan.com.day_ceshi0105.MainActivity">
+
+        <com.github.mzule.fantasyslide.FantasyDrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fake" />
+
+            <com.github.mzule.fantasyslide.SideBar
+                android:id="@+id/leftSideBar"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                app:maxTranslationX="66dp">
+
+                <LinearLayout
+                    android:id="@+id/userInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mzule"
+                        android:textColor="@color/menu_text_color"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@drawable/circle"
+                    android:text="朋友圈" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@drawable/wallet"
+                    android:text="钱包" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@drawable/coupon"
+                    android:text="优惠券" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@drawable/friends"
+                    android:text="好友" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:drawableLeft="@drawable/settings"
+                    android:text="设置" />
+            </com.github.mzule.fantasyslide.SideBar>
+
+            <com.github.mzule.fantasyslide.SideBar
+                android:id="@+id/rightSideBar"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/bg_right_bar"
+                android:gravity="center_vertical|right"
+                app:maxTranslationX="-33dp">
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="星期一" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="啊啊" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="请求" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="王五" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="恩恩" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="人人" />
+
+                <TextView
+                    style="@style/MenuText"
+                    android:text="头条" />
+            </com.github.mzule.fantasyslide.SideBar>
+        </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+        <!--<pingan.com.day_ceshi013.XCFlowLayout-->
+        <!--android:id="@+id/flowlayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" >-->
+        <!--</pingan.com.day_ceshi013.XCFlowLayout>-->
+
+        <TextView
+            android:id="@+id/tipView"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
